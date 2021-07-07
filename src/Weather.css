@@ -1,0 +1,25 @@
+.Weather {
+  font-family: arial, sans-serif;
+  border: 1px solid #dadde1;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #878787;
+}
+
+.Weather ul {
+  list-style: none;
+}
+
+.Weather .temperature {
+  color: #212121;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.Weather img {
+    width: 64px;
+    height: 64px;
+    
+}
