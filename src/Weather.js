@@ -14,8 +14,8 @@ let [weather, setWeather] = useState({ready: false});
     function displayWeather(response) {
         setWeather({
             ready: true,
-            //to get local time zone add timezone data + 4 hours (why... I don't know)
-            date: new Date((response.data.dt + response.data.timezone + 14400) * 1000),
+            //to get local time zone add timezone data to UTC timestamp
+            date: new Date((response.data.dt + response.data.timezone) * 1000),
             name: response.data.name,
             temperature: Math.round(response.data.main.temp),
             humidity: response.data.main.humidity,

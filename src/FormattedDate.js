@@ -2,8 +2,10 @@ import React from "react";
 
 export default function FormattedDate(props) {
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let hours = props.date.getHours();
-    let minutes = props.date.getMinutes();
+
+    //use UTC methods because timestamp is given in UTC timezone.
+    let hours = props.date.getUTCHours();
+    let minutes = props.date.getUTCMinutes();
 
     if(minutes < 10) {
         minutes = `0${minutes}`;
@@ -14,6 +16,6 @@ export default function FormattedDate(props) {
     }
 
     return (
-        <div>{days[props.date.getDay()]}, {hours}:{minutes}</div>
+        <div>{days[props.date.getUTCDay()]}, {hours}:{minutes}</div>
     )
 }
