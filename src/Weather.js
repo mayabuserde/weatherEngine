@@ -3,6 +3,7 @@ import "./Weather.css";
 import axios from "axios";
 
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
 
@@ -22,6 +23,7 @@ let [weather, setWeather] = useState({ready: false});
             wind: response.data.wind.speed,
             description: response.data.weather[0].description,
             icon: response.data.weather[0].icon,
+            coordinates : response.data.coord,
 
         });
 
@@ -51,7 +53,7 @@ let [weather, setWeather] = useState({ready: false});
         <div className="col-3"><input type="submit" value="Search" className="btn btn-primary w-100"/></div>
         </form>
         <WeatherInfo data={weather} />
-       
+       <WeatherForecast coordinates={weather.coordinates}/>
         </div>
         </div>
         
