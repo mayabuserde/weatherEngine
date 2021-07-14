@@ -3,10 +3,5 @@
 }
 
 .WeatherForecast .min-temp {
-  /* opacity: 0.6; */
-  color: blue;
-}
-
-.WeatherForecast .max-temp {
-  color: red;
+  opacity: 0.6;
 }

@@ -22,8 +22,13 @@ if (loaded) {
     return (
         <div className="WeatherForecast">
         <div className="row">
-        
-        <WeatherForecastDay data={forecast[0]} timezone={timezone} />
+        {forecast.map((dayForecast, index)=> {
+            if (index < 5) {
+           return (
+            <div className="col" key={index}>
+                <WeatherForecastDay data={dayForecast} timezone={timezone} />
+                </div>)} else return null;
+        })}
         
         </div>
 </div>
