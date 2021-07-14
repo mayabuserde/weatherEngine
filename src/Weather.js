@@ -48,7 +48,7 @@ let [weather, setWeather] = useState({ready: false});
     return (
         <div className="Weather">
         <div className="container">
-        <form className="row" onSubmit={handleSubmit}>
+        <form className="row mb-3 mt-2" onSubmit={handleSubmit}>
         <div className="col-9"><input type="search" className="form-control" onChange={updateCity} /></div>
         <div className="col-3"><input type="submit" value="Search" className="btn btn-primary w-100"/></div>
         </form>

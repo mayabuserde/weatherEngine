@@ -7,7 +7,7 @@ export default function App() {
      <div class="container">
        <Weather defaultCity="Sydney"/>
       
-       <footer>This project was built by <a href="https://mayabuserde.github.io/" target="_blank" rel="noreferrer">Maya Buser De</a>. It is <a href="https://github.com/mayabuserde/weatherEngine" target="_blank" rel="noreferrer">open-sourced on GitHub </a> and <a href="https://pensive-goodall-1d229c.netlify.app/" target="_blank" rel="noreferrer">hosted on Netlify</a></footer>
+       <footer className="mt-2">This project was built by <a href="https://mayabuserde.github.io/" target="_blank" rel="noreferrer">Maya Buser De</a>. It is <a href="https://github.com/mayabuserde/weatherEngine" target="_blank" rel="noreferrer">open-sourced on GitHub </a> and <a href="https://pensive-goodall-1d229c.netlify.app/" target="_blank" rel="noreferrer">hosted on Netlify</a></footer>
 
      </div>
     </div>
